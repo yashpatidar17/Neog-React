@@ -6,12 +6,17 @@ import {products} from "./Products";
 import { Question4 } from "./Question4";
 import { Question5 } from "./Question5";
 import {products2} from "./Products2";
+import { Question6 } from "./Question6";
 
 const userData = {
   name: 'John',
   age: 25,
   email: 'john@example.com',
 }
+
+const title = 'React is awesome'
+const content = 'React is a JavaScript library for building user interfaces.'
+
 function App() {
   return (
 
@@ -21,6 +26,7 @@ function App() {
       <Userprofile userdata={userData}/>
       <Question4 productlist={products}/>
       <Question5 productlist={products2}/>
+      <Question6 title = {title} content={content}/>
 
     </div>
   );
