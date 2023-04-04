@@ -19,8 +19,7 @@ export const Question9 = () => {
           <button onClick={() => clickhandler(item)}>{item.name}</button>
         ))}
         <p>HEX code: {code.value}</p>
-      </div>
-        
+      </div>   
     </div>
   );
 
