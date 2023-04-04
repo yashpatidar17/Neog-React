@@ -11,6 +11,8 @@ import { Question7 } from "./Question7";
 import { Question8 } from "./Question8";
 import { gadgets } from "./Gadgets";
 import { Question9 } from "./Question9";
+import { Question10 } from "./Question10";
+import { todoItems } from "./Todolist";
 
 const userData = {
   name: 'John',
@@ -38,6 +40,7 @@ function App() {
       <Question7 heading={heading} name={name} learning={learning}/>
       <Question8  productlist = {gadgets}/>
       <Question9/>
+      <Question10 itemlist={todoItems} header={"Todo list"}/>
     </div>
   );
 }
