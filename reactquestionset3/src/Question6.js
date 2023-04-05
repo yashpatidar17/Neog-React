@@ -5,7 +5,7 @@ export const Question6 = ({itemlist}) =>{
             {itemlist.map((item)=>{
                 if(item.flowers.includes("rose")){
                     return(
-                        <p>{item.price}</p>
+                        <p>Price of bouquet with roses :{item.price}</p>
                     )
                 }
                return null;

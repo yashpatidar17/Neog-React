@@ -8,6 +8,7 @@ import { Question5 } from './Question5';
 import { vegetables } from './Vegetable';
 import { Question6 } from './Question6';
 import { bouquet } from './Flowers';
+import { Question7 } from './Question7';
 
 const imagelink = "https://picsum.photos/200" 
 
@@ -20,6 +21,7 @@ function App() {
      <Question4 itemlist={cartoons} superpower = {"Intelligence"}/>
      <Question5 itemlist={vegetables}/>
      <Question6 itemlist={bouquet}/>
+     <Question7 itemlist={bouquet}/>
     </div>
   );
 }
