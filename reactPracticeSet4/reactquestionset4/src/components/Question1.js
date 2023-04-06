@@ -24,7 +24,7 @@ export const Question1 = ({itemlist}) =>{
             <h2>Heros</h2>
             {showhero && heroes.map((item)=>(
                 <>
-                <p >{item.name}</p>
+                <p style ={{fontWeight : 'bold'}}>{item.name}</p>
                 <p>{item.powers}</p>
                 <p>{item.costume}</p>
                 </>
@@ -37,7 +37,7 @@ export const Question1 = ({itemlist}) =>{
           
             {showvillan && villains.map((item)=>(
                 <>
-                <p >{item.name}</p>
+                <p style ={{fontWeight : 'bold'}}>{item.name}</p>
                 <p>{item.powers}</p>
                 <p>{item.costume}</p>
                 </>
