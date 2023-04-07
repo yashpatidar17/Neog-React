@@ -12,6 +12,7 @@ import { Question3op } from './components/Question3op';
 import { Q4 } from './components/Q4';
 import { Question6 } from './components/Question6';
 import { books } from './Data/Books';
+import { Question7 } from './components/Question7';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Q4/>
       <Question5 itemlist = {todoItems}/>
       <Question6 booklist={books}/>
+      <Question7/>
     </div>
   );
 }
