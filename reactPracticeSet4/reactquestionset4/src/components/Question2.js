@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export const Question2 = ()=>{
 
-    const [change,setchange] = useState(26);
+    const [change,setchange] = useState(18);
 
     const incrementfont = ()=>{
         setchange((change)=> change+1)
@@ -13,14 +13,14 @@ export const Question2 = ()=>{
     }
 
     const resetfont = ()=>{
-        setchange((change)=> change=26)
+        setchange((change)=> change=18)
     }
 
 
     return (
         <div>
             <h2>Question 2</h2>
-            <h2 style = {{fontSize: change}}>Welcome</h2>
+            <p style = {{fontSize: change}}>Welcome</p>
             <button style={{padding : "10px" ,margin: "10px"}} onClick={incrementfont}>+</button>
             <button style={{padding : "10px" , margin: "10px"}} onClick={decrementfont}>-</button>
             <button style={{padding : "10px",margin: "10px"}} onClick={resetfont}>reset</button>
