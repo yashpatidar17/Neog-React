@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const Question9 = () => {
-  const [code, setcode] = useState(null);
+  const [code, setcode] = useState([]);
   const colors = [
     { name: "Red", value: "#EE4B2B" },
     { name: "Blue", value: "#89CFF0" },

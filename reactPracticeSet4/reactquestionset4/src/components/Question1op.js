@@ -5,21 +5,28 @@ import { Showdata } from "./Showdata";
 
 export const Question1op = ({itemlist})=>{
     const {heroes,villains} = itemlist;
-    const [show,setshow] = useState([])
+    const [show,setshow] = useState({
+        heading:"",
+        herovillan:[]
+    })
 
     const showhero = ()=>{
-        setshow(heroes)
+        setshow({heading:"Hero",
+                herovillan:heroes})
     }
 
     const showvillan = ()=>{
-        setshow(villains)
+        setshow({heading:"Villan",
+                herovillan:villains})
     }
 
     return(
         <div>
+        
         <Commonbutton value ={"show Hero"} onclickhandle = {showhero}/>
         <Commonbutton value = {"Show Villan"} onclickhandle = {showvillan}/>
-        <Showdata datarec={show}/>
+        <h2>{show.heading}</h2>
+        <Showdata datarec={show.herovillan}/>
         </div>        
     )
 }
