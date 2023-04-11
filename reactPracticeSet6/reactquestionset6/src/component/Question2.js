@@ -30,6 +30,7 @@ export const Question2 = ()=>{
                         <li>{item}</li>
                     ))}
                 </ul>
+                <hr/>
                 </>
                 
             ))}

@@ -11,34 +11,38 @@ const itemList = [
 
 
 export const Question3op = ()=>{
-    const [show,setshow] = useState([])
+    const [show,setshow] = useState(itemList)
 
-    const showall = ()=>{
-        setshow(itemList)
-    }
+  
+    // const showfruits = ()=>{
+    //     //setshow(itemList.filter((item)=>item.category === "Fruit"))
+    //     setshow(itemList.reduce(
+    //         (acc, curr) =>
+    //           curr.category === "Fruit"
+    //             ? [...acc,curr]: acc,[]))
+    // }
 
-    const showfruits = ()=>{
-        //setshow(itemList.filter((item)=>item.category === "Fruit"))
+    // const showvegetable = ()=>{
+    //     //setshow(itemList.filter((item)=>item.category === "Fruit"))
+    //     setshow(itemList.reduce(
+    //         (acc, curr) =>
+    //           curr.category === "Vegetable"
+    //             ? [...acc,curr]: acc,[]))
+    // }
+
+    const fun = (category) =>{
         setshow(itemList.reduce(
             (acc, curr) =>
-              curr.category === "Fruit"
+              curr.category === category
                 ? [...acc,curr]: acc,[]))
-    }
-
-    const showvegetable = ()=>{
-        //setshow(itemList.filter((item)=>item.category === "Fruit"))
-        setshow(itemList.reduce(
-            (acc, curr) =>
-              curr.category === "Vegetable"
-                ? [...acc,curr]: acc,[]))
-    }
+    } 
 
     return(
         <div>
             <h2>Question 3</h2>
-            <Commonbutton value={"All"} onclickhandle={showall}/>
-            <Commonbutton value={"Fruits"} onclickhandle={showfruits}/>
-            <Commonbutton value={"Vegetable"} onclickhandle={showvegetable}/>
+            <Commonbutton value={"All"} onclickhandle={()=>setshow(itemList)}/>
+            <Commonbutton value={"Fruits"} onclickhandle={()=>fun("Fruit")}/>
+            <Commonbutton value={"Vegetable"} onclickhandle={()=>fun("Vegetable")}/>
             <Showdata datarec={show}/>
         </div>
     )

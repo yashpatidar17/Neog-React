@@ -26,6 +26,7 @@ export const Question3 = () => {
       <h2>Question 3</h2>
       <ul>
       {show.map(({title,desc,daysFollowed,daysSkipped}) => (
+        <>
         <li>
             <h3>{title}:</h3>
             <p>{desc}</p>
@@ -33,6 +34,10 @@ export const Question3 = () => {
             <p>Days Followed : {daysFollowed}</p>
             <p>Days Skipped : {daysSkipped}</p>
         </li>
+        <hr/>
+        </>
+       
+        
       ))}
       </ul>
       

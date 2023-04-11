@@ -28,7 +28,7 @@ export const Question1 = ()=>{
 
     return(
         <div>
-            <h1>Question 1</h1>
+            <h2>Question 1</h2>
             {show.map((item)=>(
                 <Button value= {`Show ${item.name}`} click={()=>clickHandler(item)}/>
             ))}
