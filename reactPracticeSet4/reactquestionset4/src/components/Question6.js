@@ -5,7 +5,9 @@ import { Showbooks } from "./Showbooks"
 
 export const Question6 = ({booklist})=>{
 
-    const[show,setshow]  = useState([]);
+    const[show,setshow]  = useState(booklist);
+
+//const buttonArray = booklist.reduce((acc,curr)=>())
     const showAll =()=>{
         setshow(booklist)
     }   

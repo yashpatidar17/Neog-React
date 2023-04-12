@@ -13,22 +13,17 @@ export const Q4 = () =>{
     const[show,setshow] = useState(todoItems);
 
     const displaynonehandler = (id)=>{
-        setshow(todoItems.map((item)=>{
-            if(item.id === id){
-                item.isDone = !item.isDone;
-            }
-            return item
-        }))
+        setshow(show.filter((item)=> item.id !== id))
     }
 
     return(
         <div>
             <h2>Q4</h2>
             <ul>
-                {show.map((item)=>(
-                    <div  style ={{display : item.isDone === false ? "block":"none"}}>
-                    <li key={item.id}>{item.task}</li>
-                    <Commonbutton value={"X"} onclickhandle={()=>displaynonehandler(item.id)}/>
+                {show.map(({id,task})=>(
+                   <div>
+                    <li key={id}>{task}</li>
+                    <Commonbutton value={"X"} onclickhandle={()=>displaynonehandler(id)}/>
                     </div>
                    
                 ))}
