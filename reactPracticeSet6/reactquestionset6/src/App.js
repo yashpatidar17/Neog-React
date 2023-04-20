@@ -21,9 +21,9 @@ function App() {
       <Question5/>
       <Question6/>
       <Question7/>
-      <Question8/>
-      <Question9/> */}
-      <Question10/>
+      <Question8/> */}
+      <Question9/>
+      {/* <Question10/> */}
     </div>
   );
 }

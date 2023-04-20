@@ -32,12 +32,27 @@ export const Question1 = ()=>{
             {show.map((item)=>(
                 <Button value= {`Show ${item.name}`} click={()=>clickHandler(item)}/>
             ))}
-            {data && (
+
+            {data   &&  (
                 <>
                     <p>Name : {data.name}</p>
                 </>
-            )}
+            ) }
         </div>
         
     )
+
+    // return (
+    //     <div>
+    //       <h2>Question 1</h2>
+    //       {show.map((item) => (
+    //         <Button value={`Show ${item.name}`} click={() => clickHandler(item)} />
+    //       ))}
+    //       {data.length > 0 && ( // check if data has length greater than 0 before rendering
+    //         <>
+    //           <p>Name : {data.name}</p>
+    //         </>
+    //       )}
+    //     </div>
+    //   )
 }
