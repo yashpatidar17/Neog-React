@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { TaskContext } from "../main";
+import { Link } from "react-router-dom";
 
 export const Open = () => {
   const { tododata } = useContext(TaskContext);
@@ -16,6 +17,8 @@ export const Open = () => {
             <h2>{title}</h2>
             <p>{description}</p>
             <p>Status : {isCompleted ? "Done" : "Not Done"}</p>
+            <Link to={`/todoinfo/${id}`}>Expand Todo</Link>
+            <hr></hr>
           </>
         );
       })}
