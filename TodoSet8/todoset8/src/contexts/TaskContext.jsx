@@ -29,6 +29,7 @@ export const TaskContextProvider = ({ children }) => {
     //     item.id === itemSelect.id ? { ...item, isCompleted: !item.isCompleted } : item
     //   )
     // )
+    
     setTodoData((prev)=>prev.reduce((acc,curr)=>{
         if(curr.id === itemSelect.id) {
             return [...acc,{...curr,isCompleted: !curr.isCompleted}]

@@ -14,15 +14,15 @@ import { Question9 } from './component/Question9';
 function App() {
   return (
     <div className="App">
-      {/* <Question1 />
-      <Question2/>
+      <Question1 />
+      {/* <Question2/>
       <Question3/>
       <Question4/>
       <Question5/>
       <Question6/>
       <Question7/>
-      <Question8/> */}
-      <Question9/>
+      <Question8/>
+      <Question9/> */}
       {/* <Question10/> */}
     </div>
   );
